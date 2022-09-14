@@ -1,0 +1,30 @@
+{
+  "name": "balticer-vscode-extension-pack",
+  "displayName": "balticer-vscode-extension-pack",
+  "description": "My favorite VSCode extensions",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [ 
+    "budparr.language-hugo-vscode", 
+    "bungcip.better-toml", 
+    "eliostruyf.vscode-front-matter", 
+    "eliostruyf.vscode-hugo-themer", 
+    "hashicorp.terraform", 
+    "ms-azure-devops.azure-pipelines", 
+    "ms-azuretools.vscode-azurefunctions", 
+    "ms-azuretools.vscode-azureresourcegroups", 
+    "ms-azuretools.vscode-azureterraform", 
+    "ms-dotnettools.vscode-dotnet-runtime", 
+    "ms-vscode.azure-account", 
+    "ms-vscode.powershell", 
+    "msazurermtools.azurerm-vscode-tools", 
+    "nieyuyao.vscode-plugin-webgl-syntax", 
+    "raczzalan.webgl-glsl-editor", 
+    "yzhang.markdown-all-in-one"
+  ]
+}
