@@ -2,29 +2,49 @@
   "name": "balticer-vscode-extension-pack",
   "displayName": "balticer-vscode-extension-pack",
   "description": "My favorite VSCode extensions",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "publisher": "balticer",
+  "repository": {
+    "url": "https://github.com/balticer/balticer-vscode-extension-pack"
+  },
   "engines": {
-    "vscode": "^1.71.0"
+    "vscode": "^1.76.2"
   },
   "categories": [
     "Extension Packs"
   ],
-  "extensionPack": [ 
-    "budparr.language-hugo-vscode", 
-    "bungcip.better-toml", 
-    "eliostruyf.vscode-front-matter", 
-    "eliostruyf.vscode-hugo-themer", 
-    "hashicorp.terraform", 
-    "ms-azure-devops.azure-pipelines", 
-    "ms-azuretools.vscode-azurefunctions", 
-    "ms-azuretools.vscode-azureresourcegroups", 
-    "ms-azuretools.vscode-azureterraform", 
-    "ms-dotnettools.vscode-dotnet-runtime", 
-    "ms-vscode.azure-account", 
-    "ms-vscode.powershell", 
-    "msazurermtools.azurerm-vscode-tools", 
-    "nieyuyao.vscode-plugin-webgl-syntax", 
-    "raczzalan.webgl-glsl-editor", 
+  "extensionPack": [
+    "4ops.terraform",
+    "AykutSarac.jsoncrack-vscode",
+    "budparr.language-hugo-vscode",
+    "bungcip.better-toml",
+    "eliostruyf.vscode-front-matter",
+    "eliostruyf.vscode-hugo-themer",
+    "golang.go",
+    "hashicorp.terraform",
+    "ms-azure-devops.azure-pipelines",
+    "ms-azuretools.vscode-azurefunctions",
+    "ms-azuretools.vscode-azureresourcegroups",
+    "ms-azuretools.vscode-azureterraform",
+    "ms-azuretools.vscode-bicep",
+    "ms-dotnettools.vscode-dotnet-runtime",
+    "ms-dotnettools.csharp",
+    "MS-SarifVSCode.sarif-viewer",
+    "ms-vscode-remote.remote-containers",
+    "ms-vscode-remote.remote-ssh",
+    "ms-vscode-remote.remote-ssh-edit",
+    "ms-vscode-remote.remote-wsl",
+    "ms-vscode-remote.vscode-remote-extensionpack",
+    "ms-vscode.azure-account",
+    "ms-vscode.makefile-tools",
+    "ms-vscode.powershell",
+    "ms-vscode.remote-explorer",
+    "ms-vscode.remote-server",
+    "msazurermtools.azurerm-vscode-tools",
+    "nieyuyao.vscode-plugin-webgl-syntax",
+    "raczzalan.webgl-glsl-editor",
+    "redhat.vscode-xml",
+    "redhat.vscode-yaml",
     "yzhang.markdown-all-in-one"
   ]
 }
