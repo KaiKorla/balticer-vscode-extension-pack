@@ -2,7 +2,7 @@
   "name": "balticer-vscode-extension-pack",
   "displayName": "balticer-vscode-extension-pack",
   "description": "My favorite VSCode extensions",
-  "version": "0.0.2",
+  "version": "1",
   "publisher": "balticer",
   "repository": {
     "url": "https://github.com/balticer/balticer-vscode-extension-pack"
