@@ -20,30 +20,9 @@ jobs:
         uses: lannonbr/vsce-action@3.0.0
         with:
            args: "package"
-      - name: release
-        uses: actions/create-release@v1
-        id: create_release
+      - run: echo "name=$(ls | grep vsix | sort | tail -n 1)" >> $GITHUB_OUTPUT
+        id: identify-package
+      - name: Release
+        uses: softprops/action-gh-release@v1
         with:
-          draft: false
-          prerelease: false
-          release_name: ${{ steps.version.outputs.version }}
-          tag_name: ${{ github.ref }}
-          body_path: CHANGELOG.md
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-      - name: Prepare artifact metadata
-        id: prepare_artifact_metadata
-        env:
-          VERSION: ${{ steps.get_version.outputs.VERSION }}
-        run: |
-          echo ::set-output name=ARTIFACT_PATH::./balticer-vscode-extension-pack-$VERSION.vsix
-          echo ::set-output name=ARTIFACT_NAME::balticer-vscode-extension-pack-$VERSION.vsix
-      - name: upload artifact
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ${{ steps.prepare_artifact_metadata.outputs.ARTIFACT_PATH }}
-          asset_name: ${{ steps.prepare_artifact_metadata.outputs.ARTIFACT_NAME }}
-          asset_content_type: application/octet-stream
+          files: ${{steps.identify-package.outputs.name}}
