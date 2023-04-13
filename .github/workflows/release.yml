@@ -1,0 +1,42 @@
+name: release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build_release:
+    name: Package and release extension
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: npm
+        run: npm install
+      - name: package
+        uses: lannonbr/vsce-action@3.0.0
+        with:
+           args: "package"
+      - name: release
+        uses: actions/create-release@v1
+        id: create_release
+        with:
+          draft: false
+          prerelease: false
+          release_name: ${{ steps.version.outputs.version }}
+          tag_name: ${{ github.ref }}
+          body_path: CHANGELOG.md
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: upload artifact
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./bin/balticer-vscode-extension-pack-${{ steps.version.outputs.version }}.vsix
+          asset_name: balticer-vscode-extension-pack-${{ steps.version.outputs.version }}.vsix
+          asset_content_type: application/octet-stream
