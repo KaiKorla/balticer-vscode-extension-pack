@@ -16,9 +16,6 @@ jobs:
           fetch-depth: 0
       - name: npm
         run: npm install
-      - name: get-npm-version
-        id: package-version
-        uses: martinbeentjes/npm-get-version-action@v1.3.1
       - name: package
         uses: lannonbr/vsce-action@3.0.0
         with:
@@ -34,12 +31,19 @@ jobs:
           body_path: CHANGELOG.md
         env:
           GITHUB_TOKEN: ${{ github.token }}
+      - name: Prepare artifact metadata
+        id: prepare_artifact_metadata
+        env:
+          VERSION: ${{ steps.get_version.outputs.VERSION }}
+        run: |
+          echo ::set-output name=ARTIFACT_PATH::./balticer-vscode-extension-pack-$VERSION.vsix
+          echo ::set-output name=ARTIFACT_NAME::balticer-vscode-extension-pack-$VERSION.vsix
       - name: upload artifact
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./balticer-vscode-extension-pack-@${{ steps.version.outputs.version }}.vsix
-          asset_name: balticer-vscode-extension-pack-@${{ steps.version.outputs.version }}.vsix
+          asset_path: ${{ steps.prepare_artifact_metadata.outputs.ARTIFACT_PATH }}
+          asset_name: ${{ steps.prepare_artifact_metadata.outputs.ARTIFACT_NAME }}
           asset_content_type: application/octet-stream
