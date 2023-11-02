@@ -8,7 +8,7 @@
     "url": "https://github.com/korla/korla-vscode-extension-pack"
   },
   "engines": {
-    "vscode": "^1.81.1"
+    "vscode": "^1.84.0"
   },
   "categories": [
     "Extension Packs"
@@ -47,7 +47,6 @@
     "raczzalan.webgl-glsl-editor",
     "redhat.vscode-xml",
     "redhat.vscode-yaml",
-    "sissel.shopify-liquid",
     "yzhang.markdown-all-in-one"
   ]
 }
