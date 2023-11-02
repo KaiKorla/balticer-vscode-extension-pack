@@ -2,7 +2,7 @@
   "name": "korla-vscode-extension-pack",
   "displayName": "korla-vscode-extension-pack",
   "description": "My favorite VSCode extensions",
-  "version": "2.2.0",
+  "version": "2.2.2",
   "publisher": "KORLACLOUD",
   "repository": {
     "url": "https://github.com/KaiKorla/korla-vscode-extension-pack"
