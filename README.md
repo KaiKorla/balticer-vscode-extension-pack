@@ -3,7 +3,7 @@
 My favorite VSCode extensions.
 
 # Marketplace install
-Goto https://marketplace.visualstudio.com/items?itemName=korla.korla-vscode-extension-pack or search for 'korla-vscode-extension-pack'.
+Goto https://marketplace.visualstudio.com/items?itemName=KORLACLOUD.korla-vscode-extension-pack or search for 'korla-vscode-extension-pack'.
 
 # Manual install
 Goto https://github.com/KaiKorla/korla-vscode-extension-pack/releases/latest and check for the latest version.
