@@ -5,7 +5,7 @@
   "version": "2.2.0",
   "publisher": "KORLACLOUD",
   "repository": {
-    "url": "https://github.com/korla/korla-vscode-extension-pack"
+    "url": "https://github.com/KaiKorla/korla-vscode-extension-pack"
   },
   "engines": {
     "vscode": "^1.84.0"
