@@ -2,13 +2,13 @@
   "name": "korla-vscode-extension-pack",
   "displayName": "korla-vscode-extension-pack",
   "description": "My favorite VSCode extensions",
-  "version": "2.2.3",
+  "version": "2.3.0",
   "publisher": "KORLACLOUD",
   "repository": {
     "url": "https://github.com/KaiKorla/korla-vscode-extension-pack"
   },
   "engines": {
-    "vscode": "^1.84.0"
+    "vscode": "^1.85.1"
   },
   "categories": [
     "Extension Packs"
@@ -50,6 +50,7 @@
     "ms-azuretools.vscode-logicapps",
     "ms-bigdatatools.vscode-asa",
     "ms-dotnettools.csharp",
+    "ms-dotnettools.csdevkit",
     "ms-dotnettools.vscode-dotnet-runtime",
     "ms-kubernetes-tools.aks-devx-tools",
     "ms-kubernetes-tools.vscode-aks-tools",
