@@ -2,7 +2,7 @@
   "name": "korla-vscode-extension-pack",
   "displayName": "korla-vscode-extension-pack",
   "description": "My favorite VSCode extensions",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "publisher": "KORLACLOUD",
   "repository": {
     "url": "https://github.com/KaiKorla/korla-vscode-extension-pack"
@@ -15,14 +15,12 @@
   ],
   "extensionPack": [
     "AykutSarac.jsoncrack-vscode",
-    "azapi-vscode.azapi",
     "azure-automation.vscode-azureautomation",
     "azurearc-dev.azurearc",
     "AzurePolicy.azurepolicyextension",
     "Azurite.azurite",
     "budparr.language-hugo-vscode",
     "edge-security.osconfig",
-    "eliostruyf.vscode-front-matter",
     "eliostruyf.vscode-hugo-themer",
     "formulahendry.azure-storage-explorer",
     "GitHub.remotehub",
