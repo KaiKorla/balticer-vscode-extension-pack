@@ -8,7 +8,7 @@
     "url": "https://github.com/KaiKorla/korla-vscode-extension-pack"
   },
   "engines": {
-    "vscode": "^1.85.1"
+    "vscode": "^1.86.2"
   },
   "categories": [
     "Extension Packs"
