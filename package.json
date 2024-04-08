@@ -2,13 +2,13 @@
   "name": "korla-vscode-extension-pack",
   "displayName": "korla-vscode-extension-pack",
   "description": "My favorite VSCode extensions",
-  "version": "2.5.2",
+  "version": "2.6.0",
   "publisher": "KORLACLOUD",
   "repository": {
     "url": "https://github.com/KaiKorla/korla-vscode-extension-pack"
   },
   "engines": {
-    "vscode": "^1.86.2"
+    "vscode": "^1.88.0"
   },
   "categories": [
     "Extension Packs"
@@ -24,7 +24,6 @@
     "eliostruyf.vscode-hugo-themer",
     "formulahendry.azure-storage-explorer",
     "GitHub.remotehub",
-    "golang.go",
     "humao.rest-client",
     "ms-azure-devops.azure-pipelines",
     "ms-azurecache.vscode-azurecache",
@@ -32,6 +31,7 @@
     "ms-azuretools.azure-video-analyzer",
     "ms-azuretools.vscode-apimanagement",
     "ms-azuretools.vscode-azureappservice",
+    "ms-azuretools.vscode-azurearcenabledmachines",
     "ms-azuretools.vscode-azurecontainerapps",
     "ms-azuretools.vscode-azurefunctions",
     "ms-azuretools.vscode-azurelogicapps",
@@ -52,9 +52,8 @@
     "ms-kubernetes-tools.aks-devx-tools",
     "ms-kubernetes-tools.vscode-aks-tools",
     "ms-kubernetes-tools.vscode-kubernetes-tools",
-    "ms-python.python",
-    "ms-python.vscode-pylance",
     "MS-SarifVSCode.sarif-viewer",
+    "ms-ssdevteam.scope-vscode-ext",
     "ms-toolsai.vscode-ai",
     "ms-toolsai.vscode-ai-inference",
     "ms-toolsai.vscode-ai-remote",
