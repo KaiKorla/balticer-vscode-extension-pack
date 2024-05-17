@@ -4,6 +4,49 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [3.0.0] - 2024-05-17
+- Removed AykutSarac.jsoncrack-vscode
+- Removed azure-automation.vscode-azureautomation
+- Removed edge-security.osconfig
+- Removed formulahendry.azure-storage-explorer
+- Removed GitHub.remotehub
+- Removed ms-azure-devops.azure-pipelines
+- Removed ms-azuretools.azure-video-analyzer
+- Removed ms-azuretools.vscode-azureserverlesspack
+- Removed ms-azuretools.vscode-docker
+- Removed ms-kubernetes-tools.aks-devx-tools
+- Removed ms-kubernetes-tools.vscode-aks-tools
+- Removed ms-kubernetes-tools.vscode-kubernetes-tools
+- Removed ms-ssdevteam.scope-vscode-ext
+- Removed ms-toolsai.vscode-ai-inference
+- Removed ms-toolsai.vscode-ai-remote
+- Removed ms-toolsai.vscode-ai-remote-web
+- Removed ms-vscode.azure-repos
+- Removed ms-vscode.makefile-tools
+- Removed ms-vscode.powershell
+- Removed ms-vscode.remote-explorer
+- Removed ms-vscode.remote-repositories
+- Removed ms-vscode.remote-server
+- Removed ms-vscode.vscode-node-azure-pack
+- Removed ms-vscode-remote.remote-containers
+- Removed ms-vscode-remote.remote-ssh
+- Removed ms-vscode-remote.remote-ssh-edit
+- Removed ms-vscode-remote.remote-wsl
+- Removed ms-vscode-remote.vscode-remote-extensionpack
+- Removed nieyuyao.vscode-plugin-webgl-syntax
+- Removed raczzalan.webgl-glsl-editor
+- Removed vsciot-vscode.azure-iot-edge
+- Removed vsciot-vscode.azure-iot-toolkit
+- Adding ms-azuretools.vscode-azureterraform
+- Adding ms-dotnettools.blazorwasm-companion
+- Adding ms-dotnettools.vscodeintellicode-csharp
+- Adding ms-python.debugpy
+- Adding ms-python.python
+- Adding ms-python.vscode-pylance
+- Adding ms-toolsai.datawrangler
+- Adding redhat.ansible
+- Adding rust-lang.rust-analyzer
+- Bump supported vscode version
 
 ## [2.6.0] - 2024-04-08
 - Removed golang.go
