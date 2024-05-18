@@ -52,6 +52,8 @@
     "ms-toolsai.vscode-ai",
     "ms-toolsai.vscode-ai-remote",
     "ms-vscode.azure-account",
+    "ms-vscode.hexeditor",
+    "ms-vscode.vscode-serial-monitor",
     "redhat.ansible",
     "redhat.vscode-xml",
     "redhat.vscode-yaml",
