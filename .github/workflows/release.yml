@@ -17,7 +17,7 @@ jobs:
       - name: npm
         run: npm install
       - name: package
-        uses: lannonbr/vsce-action@3.0.0
+        uses: lannonbr/vsce-action@4.0.0
         with:
           args: "package"
       - run: echo "name=$(ls | grep vsix | sort | tail -n 1)" >> $GITHUB_OUTPUT
@@ -26,3 +26,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: ${{steps.identify-package.outputs.name}}
+
